@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 构造器实例化 -->
+    <bean id="constructorUser" class="com.ximi.spring.bean.domain.User">
+        <constructor-arg type="java.lang.Integer" value="2"/>
+        <constructor-arg type="java.lang.Integer" value="30"/>
+        <constructor-arg type="java.lang.String" value="ximi"/>
+    </bean>
+
+    <!--  静态工程方法 -->
+    <bean id="factoryMethodUser" class="com.ximi.spring.bean.domain.User" factory-method="createUser"/>
+
+    <!-- 工厂方法 -->
+    <bean id="userFactory" class="com.ximi.spring.bean.factory.DefaultUserFactory"/>
+    <bean id="factoryBeanUser" class="com.ximi.spring.bean.domain.User" factory-bean="userFactory" factory-method="createUser"/>
+
+    <!-- Factory Bean-->
+    <bean id="userFactoryBean" class="com.ximi.spring.bean.factory.UserFactoryBean"/>
+
+</beans>
