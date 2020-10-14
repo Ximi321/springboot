@@ -1,5 +1,7 @@
 package com.ximi.dependency.injection.domain;
 
+import java.util.List;
+
 /**
  * 用户
  *
@@ -7,6 +9,13 @@ package com.ximi.dependency.injection.domain;
  * @since 2020/10/13
  */
 public class User {
+
+    public User(Integer id) {
+        this.id = id;
+    }
+
+    public User() {
+    }
 
     private Integer id;
 
