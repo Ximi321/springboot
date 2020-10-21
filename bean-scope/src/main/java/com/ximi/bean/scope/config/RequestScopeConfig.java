@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
 @Component
-public class RequestConfig {
+public class RequestScopeConfig {
 
     @Bean
     @RequestScope  //采用了cglib对User进行了加强

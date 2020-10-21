@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("request")
-public class RequestScopeController {
+@RequestMapping("application")
+public class ApplicationScopeController {
 
     @Autowired
-    @Qualifier("requestUser")
+    @Qualifier("applicationUser")
     private User user;
 
 
@@ -25,4 +25,5 @@ public class RequestScopeController {
     public String getUser() {
         return user.toString();
     }
+
 }

@@ -1,6 +1,6 @@
 package com.ximi.bean.scope;
 
-import com.ximi.bean.scope.config.SingletonConfig;
+import com.ximi.bean.scope.config.SingletonScopeConfig;
 import com.ximi.bean.scope.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Import;
  * @author Ximi
  * @since 2020/10/20
  */
-@Import(SingletonConfig.class)
+@Import(SingletonScopeConfig.class)
 public class SingletonScopeDome {
 
     @Autowired

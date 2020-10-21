@@ -1,6 +1,6 @@
 package com.ximi.bean.scope;
 
-import com.ximi.bean.scope.config.PrototypeConfig;
+import com.ximi.bean.scope.config.PrototypeScopeConfig;
 import com.ximi.bean.scope.domain.User;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
@@ -25,7 +25,7 @@ import java.util.Map;
  * @author Ximi
  * @since 2020/10/20
  */
-@Import(PrototypeConfig.class)
+@Import(PrototypeScopeConfig.class)
 public class PrototypeScopeDome implements DisposableBean, BeanFactoryAware {
 
     @Autowired

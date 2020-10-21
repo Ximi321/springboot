@@ -5,11 +5,11 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
 
-public class SingletonConfig {
+public class PrototypeScopeConfig {
 
     @Bean
-    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)  //默认是singleton,可以不指定
-    public User singletonUser(){
+    @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    public User prototypeUser(){
         return User.createUser();
     }
 

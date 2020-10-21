@@ -4,16 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Request Scope Dome
+ * Session Scope Dome
  *
  * @author Ximi
- * @since 2020/10/20
+ * @since 2020/10/21
  */
 @SpringBootApplication
-public class RequestScopeDome {
+public class SessionScopeDome {
 
     public static void main(String[] args) {
-        SpringApplication.run(RequestScopeDome.class, args);
+        SpringApplication.run(SessionScopeDome.class, args);
     }
 
 }

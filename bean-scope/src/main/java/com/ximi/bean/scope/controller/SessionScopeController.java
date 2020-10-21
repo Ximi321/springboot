@@ -8,16 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("request")
-public class RequestScopeController {
+@RequestMapping("session")
+public class SessionScopeController {
 
     @Autowired
-    @Qualifier("requestUser")
+    @Qualifier("sessionUser")
     private User user;
 
-
     /**
-     * 每一次请求的时候,user都会初始化和销毁
+     * 同一个session中 user 是同一个
      *
      * @return
      */
@@ -25,4 +24,5 @@ public class RequestScopeController {
     public String getUser() {
         return user.toString();
     }
+
 }
