@@ -13,7 +13,7 @@ import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
  *
  * @author Ximi
  * @since 2020/10/28
- * @see DisposableBeanAdapter#des
+ * @see org.springframework.beans.factory.support.DisposableBeanAdapter#destroy
  */
 public class BeanDestroyLifeCycleDome {
 
