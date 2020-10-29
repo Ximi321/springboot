@@ -29,7 +29,7 @@ public class BeanInitializeLifecycleDome {
             ex.printStackTrace();
         }
 
-//        displayBeanFacory();
+        displayBeanFacory();
 
     }
 
